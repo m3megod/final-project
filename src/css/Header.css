@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: gray;
+    height: 70px;
+    border-style: double;
+}
+.menu_div{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_nav_button_div{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.menu_nav_button{
+    background-image: url("/public/logo512.png");
+    width: 20px;
+    height: 20px;
+}
+.logo{
+    margin-right: 300px
+}
+.shopping_cart{
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.linki{
+    margin-right: 10px;
+}

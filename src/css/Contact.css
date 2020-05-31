@@ -1,0 +1,27 @@
+.contact-div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contact-input{
+    height: 40px;
+    width: 350px;
+    margin: 10px
+}
+.contact-title{
+    margin: 10px;
+}
+.contact-text{
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+}
+.contact-send{
+    margin: 10px;
+    width: 360px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: black;
+}

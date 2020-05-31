@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "name": "Nice Jacket",
+            "price": 100,
+            "free": true,
+            "sizes": [
+                "L",
+                "M",
+                "XL"
+            ],
+            "image":"../img/jacket.jfif",
+            "id": 1,
+            "description": "stripped jacket"
+        },
+        {
+            "name": "stylish T-shirt",
+            "price": 90,
+            "free": false,
+            "sizes": [
+                "L",
+                "M",
+                "XL",
+                "XXL",
+                "S",
+                "XS"
+            ],
+            "image": "",
+            "id": 2,
+            "description": "stripped jacket"
+        },
+        {
+            "name": "stylish T-shirt",
+            "price": 90,
+            "free": false,
+            "sizes": [
+                "L",
+                "M",
+                "XL",
+                "XXL",
+                "S",
+                "XS"
+            ],
+            "image": "",
+            "id": 3,
+            "description": "stripped jacket"
+        }
+    ]
+}
