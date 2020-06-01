@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 import '../css/Home.css';
 import products from '../products.json';
+import { Link } from 'react-router-dom';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from 'react-router-dom';
-import Product from './Product';
-
-class Home extends React.Component {
+class Home extends Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <>
