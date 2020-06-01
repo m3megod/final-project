@@ -7,14 +7,10 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    useParams
 } from "react-router-dom";
 import Product from './Product'
-
-
-// function Smth() {
-
-
 
 
 
@@ -22,7 +18,6 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
     }
-
     render() {
         return (
             <>
@@ -48,25 +43,25 @@ class Home extends React.Component {
                         </div>
                     </div>
                     <div className='products-div'>
-
                         <div className='prodebi'>
                             {products.data.map(items =>
                                 <div className='items'>
                                     <Link to={`/products/${items.id}`}><img src={items.image} /></Link>
-                                    <Switch>
-                                        <Route path={`/products/${items.id}`}>
-                                            <Product />
-                                        </Route>
-                                    </Switch>
                                     {items.free && <div className="freeshipping">Free Shipping</div>}
                                     <div className='name'>{items.name}</div>
-                                    <div className='price'>{items.price}</div>
+                                    <div className='price'>{items.price}<p>GEL</p></div>
                                     <input type='button' onClick='addToCart' value='+ Add To Cart' />
                                 </div>
+
                             )}
                         </div>
                     </div>
                 </div>
+                <Switch>
+                    <Route path="/products/:aidi">
+                        <Product />
+                    </Route>
+                </Switch>
 
             </>
         )

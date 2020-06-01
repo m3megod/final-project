@@ -1,11 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import '../css/Header.css'
 
 import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    useParams
 } from "react-router-dom";
 import Home from './Home';
 import About from './About';
@@ -15,22 +16,30 @@ import products from '../products.json'
 
 
 function Product() {
-
     
+        let { aidi } = useParams()
+
+        const [currentprod, setCurrentprod] = useState(products.data.find((product) => product.id === aidi))
+
+        console.log(aidi) 
+
         return (
             <>
-                {products.data.map(items =>
-                    <div className='items'>
+                <div>
+                    
+                </div>
+                <div>
+                    {
+                    currentprod.free
+                    }
+                </div>
 
-                        {items.free && <div className="freeshipping">Free Shipping</div>}
-                        <div className='name'>{items.name}</div>
-                        <div className='price'>{items.price}</div>
-                        <input type='button' onClick='addToCart' value='+ Add To Cart' />
-                    </div>
-                )}
             </>
         )
+
     
+
 }
+
 
 export default Product;

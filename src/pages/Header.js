@@ -11,6 +11,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Cart from './Cart';
+import Product from './Product';
 
 class Header extends Component {
     constructor(props) {
@@ -47,7 +48,13 @@ class Header extends Component {
                         {this.shouldShowMenu()}
                     </div>
                     <div className='logo'>
-                        T B
+                        <div className='t'>
+                            T
+                        </div>
+                        <div className='b'>
+                            B
+                        </div>
+
                     </div>
                     <div>
                         <Link to="/cart">Cart</Link>
@@ -67,8 +74,13 @@ class Header extends Component {
                         <Route path="/cart">
                             <Cart />
                         </Route>
+                        <Route>
+                            <Product />
+                        </Route>
                     </Switch>
+
                 </div>
+
             </>
         )
     }
