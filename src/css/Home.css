@@ -1,20 +1,27 @@
-
-.filter-div{
+.filter-div {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
-.items{
+.items {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 200px;
+    width: 20%;
     height: 230px;
-    border: black;
-    border: solid;
+    margin: 5px;
+    margin-bottom: 200px;
 }
-.prodebi{
+
+.prodebi {
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.homeimg {
+    width: 250px;
+    height: 250px;
 }

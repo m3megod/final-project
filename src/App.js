@@ -24,7 +24,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/cart">
-          <Cart />
+        <Cart  />
         </Route>
         <Route path="/products/:aidi">
           <Product />

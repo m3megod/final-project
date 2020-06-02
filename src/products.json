@@ -3,7 +3,7 @@
         {   "id": 1,
             "name": "Nice Jacket",
             "price": 100,
-            "free": true,
+            "free": false,
             "sizes": [
                 "L",
                 "M",
@@ -14,8 +14,8 @@
             "description": "stripped jacket"
         },
         {   "id": 2,
-            "name": "stylish T-shirt",
-            "price": 90,
+            "name": "Twenty One Pilots T-shirt",
+            "price": 60,
             "free": false,
             "sizes": [
                 "L",
@@ -25,13 +25,13 @@
                 "S",
                 "XS"
             ],
-            "image": "/img/jacket.jfif",
+            "image": "/img/shirt.jfif",
             
-            "description": "stripped jacket"
+            "description": "this is a very nice twenty one pilots t-shirt"
         },
         {   "id": 3,
-            "name": "stylish T-shirt",
-            "price": 90,
+            "name": "Twenty One Pilots Hoodie",
+            "price": 120,
             "free": false,
             "sizes": [
                 "L",
@@ -41,8 +41,41 @@
                 "S",
                 "XS"
             ],
-            "image": "/img/jacket.jfif",
-            "description": "stripped jacket"
+            "image": "/img/top-hoodie.jpg",
+            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench"
+        },
+        {   "id": 4,
+            "name": "Twenty One Pilots Hoodie",
+            "price": 120,
+            "free": false,
+            "sizes": [
+                "L",
+                "M",
+                "XL",
+                "XXL",
+                "S",
+                "XS"
+            ],
+            "image": "/img/top-hoodie.jpg",
+            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench"
+        },
+        {   "id": 4,
+            "name": "Twenty One Pilots Hoodie",
+            "price": 120,
+            "free": false,
+            "sizes": [
+                "L",
+                "M",
+                "XL",
+                "XXL",
+                "S",
+                "XS"
+            ],
+            "image": "/img/top-hoodie.jpg",
+            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench"
         }
+        
+        
+        
     ]
 }

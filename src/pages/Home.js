@@ -2,12 +2,24 @@ import React, { Component } from 'react';
 import '../css/Home.css';
 import products from '../products.json';
 import { Link } from 'react-router-dom';
+import Cart from './Cart'
 
 class Home extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      passProduct: {}
+    }
+
   }
 
+  addToCart(items) {
+    this.setState({
+      passProduct: items 
+    });
+
+    
+  }
   render() {
     return (
       <>
@@ -49,7 +61,7 @@ class Home extends Component {
               {products.data.map((items) => (
                 <div className="items">
                   <Link to={`/products/${items.id}`}>
-                    <img src={items.image} />
+                    <img src={items.image} className='homeimg' />
                   </Link>
                   {items.free && (
                     <div className="freeshipping">Free Shipping</div>
@@ -61,15 +73,19 @@ class Home extends Component {
                   </div>
                   <input
                     type="button"
-                    onClick="addToCart"
+                    onClick={() => this.addToCart(items)}
                     value="+ Add To Cart"
+                    id={items.id}
+                    className='but'
                   />
                 </div>
               ))}
             </div>
           </div>
         </div>
+        {/* <Cart itm={this.state.passProduct} /> */}
       </>
+      
     );
   }
 }

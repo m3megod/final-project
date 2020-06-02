@@ -1,0 +1,29 @@
+.product-main-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-right: 500px;
+    height: 500px;
+}
+
+.saxeli{
+    font-weight: 400;
+}
+
+.aghwera{
+    margin-top: -15px;
+    color: gray;
+}
+
+.product-img{
+    width: 300px;
+    height: 300px;
+}
+
+.prodbut{
+    width: 250px;
+    height: 38px;
+    background-color: white;
+    border: gray solid;
+    margin-top: 80px;
+}
