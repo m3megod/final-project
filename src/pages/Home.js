@@ -7,18 +7,18 @@ import Cart from './Cart'
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      passProduct: {}
-    }
 
+    window.$skartebi = []
+
+    this.addToCart = this.addToCart.bind(this);
   }
 
-  addToCart(items) {
-    this.setState({
-      passProduct: items 
-    });
 
-    
+  addToCart(items) {
+    var skartebi = window.$skartebi
+    skartebi.push(items)
+    localStorage.setItem('itm', JSON.stringify(skartebi))
+    this.refs.btn.setAttribute("disabled", "disabled");
   }
   render() {
     return (
@@ -61,15 +61,20 @@ class Home extends Component {
               {products.data.map((items) => (
                 <div className="items">
                   <Link to={`/products/${items.id}`}>
-                    <img src={items.image} className='homeimg' />
+                    <div className='container'>
+                      <img src={items.image} className='homeimg' />
+                      {items.free && (
+                        <div className="freeshipping">Free Shipping</div>
+                      )}
+                    </div>
+
                   </Link>
-                  {items.free && (
-                    <div className="freeshipping">Free Shipping</div>
-                  )}
-                  <div className="name">{items.name}</div>
-                  <div className="price">
-                    {items.price}
-                    <p>GEL</p>
+
+                  <div className='pricediv'>
+                    <div className="name"><p>{items.name}</p></div>
+                    <div className="price">
+                      <p>{items.price} GEL</p>
+                    </div>
                   </div>
                   <input
                     type="button"
@@ -77,15 +82,16 @@ class Home extends Component {
                     value="+ Add To Cart"
                     id={items.id}
                     className='but'
+                    ref='btn'
                   />
                 </div>
               ))}
             </div>
           </div>
         </div>
-        {/* <Cart itm={this.state.passProduct} /> */}
+
       </>
-      
+
     );
   }
 }

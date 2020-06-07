@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Header.css';
+// import logo from '../public/img/logo192.png';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ class Header extends Component {
 
   toggleShowMenu(event) {
     this.setState((state) => ({ showMenu: !state.showMenu }));
+    
   }
 
   //
@@ -41,18 +43,21 @@ class Header extends Component {
       <>
         <header>
           <div className="menu_nav_button_div">
-            <button
+            <input type='image' src='/img/menu.png'
               className="menu_nav_button"
-              onClick={this.toggleShowMenu}
-            ></button>
+              onClick={this.toggleShowMenu} />
             {this.shouldShowMenu()}
           </div>
           <div className="logo">
             <div className="t">T</div>
             <div className="b">B</div>
           </div>
-          <div>
-            <Link to="/cart">Cart</Link>
+          <div className='kartisdivi'>
+            <Link to="/cart"><img src='/img/bag.png' className='cart-link' />
+            </Link>
+            <div className='cart-size'>
+              <p>{JSON.parse(localStorage.getItem('itm')).length}</p>
+            </div>
           </div>
         </header>
       </>

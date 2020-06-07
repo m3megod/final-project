@@ -1,0 +1,6 @@
+.about{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

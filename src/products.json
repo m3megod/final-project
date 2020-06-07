@@ -1,9 +1,9 @@
 {
     "data": [
         {   "id": 1,
-            "name": "Nice Jacket",
+            "name": "Jacket",
             "price": 100,
-            "free": false,
+            "free": true,
             "sizes": [
                 "L",
                 "M",
@@ -11,7 +11,9 @@
             ],
             "image":"/img/jacket.jfif",
             
-            "description": "stripped jacket"
+            "description": "stripped jacket",
+            "cali": 1
+            
         },
         {   "id": 2,
             "name": "Twenty One Pilots T-shirt",
@@ -27,7 +29,8 @@
             ],
             "image": "/img/shirt.jfif",
             
-            "description": "this is a very nice twenty one pilots t-shirt"
+            "description": "this is a very nice twenty one pilots t-shirt",
+            "cali": 1
         },
         {   "id": 3,
             "name": "Twenty One Pilots Hoodie",
@@ -42,11 +45,44 @@
                 "XS"
             ],
             "image": "/img/top-hoodie.jpg",
-            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench"
+            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench",
+            "cali": 1
         },
         {   "id": 4,
-            "name": "Twenty One Pilots Hoodie",
+            "name": "Falling In Reverse T-shirt",
+            "price": 99,
+            "free": true,
+            "sizes": [
+                "L",
+                "M",
+                "XL",
+                "XXL",
+                "S",
+                "XS"
+            ],
+            "image": "/img/fir.jpg",
+            "description": "falling in reverse t shirt song i'm not a vampire",
+            "cali": 1
+        },
+        {   "id": 5,
+            "name": "Neymar Football Kit",
             "price": 120,
+            "free": true,
+            "sizes": [
+                "L",
+                "M",
+                "XL",
+                "XXL",
+                "S",
+                "XS"
+            ],
+            "image": "/img/ney.jpg",
+            "description": "neymar's t-shirt PSG",
+            "cali": 1
+        },
+        {   "id": 6,
+            "name": "Orange Stylish Hoodie",
+            "price": 100,
             "free": false,
             "sizes": [
                 "L",
@@ -56,13 +92,14 @@
                 "S",
                 "XS"
             ],
-            "image": "/img/top-hoodie.jpg",
-            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench"
+            "image": "/img/hoodie.jpg",
+            "description": "Orange Cotton Hoodiee",
+            "cali": 1
         },
-        {   "id": 4,
-            "name": "Twenty One Pilots Hoodie",
+        {   "id": 7,
+            "name": "Element Hoodie",
             "price": 120,
-            "free": false,
+            "free": true,
             "sizes": [
                 "L",
                 "M",
@@ -71,8 +108,9 @@
                 "S",
                 "XS"
             ],
-            "image": "/img/top-hoodie.jpg",
-            "description": "this is a TOP's new amazing yellow hoodie which represents album Trench"
+            "image": "/img/element.jpg",
+            "description": "A nice stylish hoodie",
+            "cali": 1
         }
         
         

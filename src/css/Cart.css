@@ -1,0 +1,55 @@
+.cart-main-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.karti{
+    margin-left: 140px;
+}
+.cart-img{
+    width: 150px;
+    height: 150px;
+}
+.cart-img-div{
+    width: 150px;
+    height: 150px;
+}
+.fasebi{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 150px;
+}
+.cart-items{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 150px;
+    margin: 40px;
+    box-shadow: lightgray 1px 2px 0.6px;
+}
+.cartbut{
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    background-color: white;
+    border: 0px;
+}
+.one{
+    display: flex;
+}
+.increment{
+    display: flex;
+    justify-content: space-between;
+}
+.mesame{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
